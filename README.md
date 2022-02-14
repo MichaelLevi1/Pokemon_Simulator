@@ -2,6 +2,8 @@
 
 This is an interactive Pokemon type simulator for determining the offensive and defensive stats of the 18 types. Three simulator tools are currently available; 'Attack Stats', 'Defend Stats' and 'Type Score'. This simulator is solely for a Pokemon's typing therefore it does not consider abilities such as Levitate, Dry Skin, Flash Fire etc.
 
+
+
 ![PokeSim](https://i.imgur.com/H7Bq4z5.png)
 
 **Attack Stats**
