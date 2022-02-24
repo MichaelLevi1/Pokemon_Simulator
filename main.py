@@ -1,6 +1,5 @@
 # Michael Leventeris - Pokemon Typing Simulator
 
-from moviepy.editor import *
 import pygame
 from Pokemon_class import pokemon_funtions as p
 import numpy as np
@@ -37,7 +36,7 @@ def draw(selected_option="None", input_prompt="", input_prompt_2 = "", image_dis
     win.blit(title, (WIDTH/2 - title.get_width()/2 , 5))
 
     # Controls Display
-    controls = FONT.render("R - Reset | Enter - Confirm Types | A - Attack Stats | D - Defend Stats | T - Type Score | F - Fun", 1, BLACK)
+    controls = FONT.render("R - Reset | Enter - Confirm Types | A - Attack Stats | D - Defend Stats | T - Type Score", 1, BLACK)
     win.blit(controls, (WIDTH/2 - controls.get_width()/2 , 80))
 
     # Selected Option Display
@@ -253,13 +252,6 @@ def main():
                     enter_press = True
                     image_display = False
                     type_vector = Types[0]
-
-            elif event.key == pygame.K_f:
-                clip = VideoFileClip('pokemon_clip.mp4')
-                clip.resize((WIDTH,HEIGHT))
-                clip.preview()
-                win = pygame.display.set_mode((WIDTH,HEIGHT))
-
 
     pygame.quit()
 
