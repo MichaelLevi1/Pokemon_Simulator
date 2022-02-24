@@ -21,4 +21,3 @@ Tells you how good a type combination is defensively using a type score, which i
 
 * pygame
 * numpy
-* moviepy.editor
